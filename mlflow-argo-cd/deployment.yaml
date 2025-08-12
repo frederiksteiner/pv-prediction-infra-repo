@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: mlflow
-          image: ghcr.io/mlflow/mlflow:2.14.1
+          image: ghcr.io/mlflow/mlflow:3.2.0
           command: ["mlflow", "server"]
           args:
             - "--backend-store-uri=sqlite:///mlflow/mlflow.db"
