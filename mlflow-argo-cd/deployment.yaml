@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: mlflow
-          image: ghcr.io/mlflow/mlflow:v3.2.0
+          image: bitnami/mlflow:3.2.0
           resources:
             limits:
               memory: 512Mi
