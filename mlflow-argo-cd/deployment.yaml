@@ -23,7 +23,7 @@ spec:
               memory: 1Gi
               cpu: "0.2"
           command: ["/bin/sh","-c"]
-          args: ["**pip install boto3** && mlflow server --backend-store-uri postgresql://mlflowuser:mlflowpass@postgres:5432/mlflow --default-artifact-root s3://mlflow-artifacts --host 0.0.0.0 --port 5000"]
+          args: ["pip install boto3 && mlflow server --backend-store-uri postgresql://mlflowuser:mlflowpass@postgres:5432/mlflow --default-artifact-root s3://mlflow-artifacts --host 0.0.0.0 --port 5000"]
           env:
             - name: MLFLOW_S3_ENDPOINT_URL
               value: "http://minio:9000"
