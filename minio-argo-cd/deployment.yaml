@@ -36,6 +36,8 @@ spec:
                 secretKeyRef:
                   name: mlflow-secrets
                   key: MINIO_SECRET_KEY
+            - name: MINIO_BUCKETS
+              value: "mlflow-artifacts"
           ports:
             - containerPort: 9000
             - containerPort: 9001
